@@ -1,15 +1,6 @@
 <?php  
-/* 作用取得客户端的ip、地理信息、浏览器http://blog.qita.in 
- * 使用方法如下 
-  
- $gifo = new get_guest_info(); 
- $addr = $gifo->Getaddress_1(); 
- echo $addr['country'].'<br />'.$addr['local']; 
- echo toUTF8("<br/>浏览器类型：").$gifo->GetBrowser(); 
- echo toUTF8("<br/>浏览器语言：").toUTF8($gifo->GetLang()); 
- echo toUTF8("<br/>操作系统：").$gifo->GetOs();  
-  
- */  
+require_once('phpcharset.php');
+
 class get_guest_info  
 {  
     ////获得访客浏览器类型  
